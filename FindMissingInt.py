@@ -40,7 +40,7 @@ print("Set difference method: The sneaky number must be {0}".format(diff[0]))
 
 # --------------------------------------------------------------------------------------------------------------------
 
-# Sharad Gupta hinted that there was a another method using factorization. Still trying to work that one out!
+# SG hinted that there was a another method using factorization. Still trying to work that one out!
 
 # --------------------------------------------------------------------------------------------------------------------
 
