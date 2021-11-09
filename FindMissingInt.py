@@ -6,7 +6,7 @@ import random
 # except that is missing one number in the sequence. How would you approach finding out the missing number?
 
 N = 100
-numbers_original = [x for x in range(1, N)]
+numbers_original = [x for x in range(0, N+1)]
 random.shuffle(numbers_original)
 
 # One of our numbers ran away!
@@ -40,5 +40,12 @@ print("Set difference method: The sneaky number must be {0}".format(diff[0]))
 
 # --------------------------------------------------------------------------------------------------------------------
 
-# SG hinted that there was a another method using factorization. Still trying to work that one out!
+# Sharad Gupta hinted that there was a another method using factorization. Still trying to work that one out!
 
+# --------------------------------------------------------------------------------------------------------------------
+
+# A friend told me to look up Gauss' trick- this is a better way of summation for the original elements and results
+# in a single rather than two iterations for summation - this also let me find a bug in my code where I was planning on
+# N elements but actually assigning N-1 elements which broke the N + 1 part of this formula.
+total = (N * (N + 1)) / 2
+print("Difference Method with Gauss' Trick: The sneaky number must be {0}".format(total - total_with_missing_number))
