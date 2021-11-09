@@ -42,6 +42,10 @@ print("Set difference method: The sneaky number must be {0}".format(diff[0]))
 
 # SG hinted that there was a another method using factorization. Still trying to work that one out!
 
+# A friend told me to look up Gauss' trick- this is a better way of summation for the original elements and results
+# in a single rather than two iterations for summation
 
+total = (N * (N+1) / 2) - sum(numbers_missing_element)
+print("Difference Method with Gauss' Trick: The sneaky number must be {0}".format(difference))
 
 
