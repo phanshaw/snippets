@@ -6,7 +6,7 @@ import random
 # except that is missing one number in the sequence. How would you approach finding out the missing number?
 
 N = 100
-numbers_original = [x for x in range(0, N+1)]
+numbers_original = [x for x in range(1, N+1)]
 random.shuffle(numbers_original)
 
 # One of our numbers ran away!
